@@ -10,24 +10,25 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: #fdebd0;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     #envelope {
-      width: 300px;
-      height: 200px;
-      background: orange;
+      width: 320px;
+      height: 220px;
+      background: linear-gradient(135deg, #ff7f50, #ff6347);
       border: 5px solid #b34700;
       border-radius: 15px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
+      font-size: 28px;
       color: white;
       cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
       text-align: center;
+      padding: 20px;
     }
 
     #letter {
@@ -35,36 +36,58 @@
       max-width: 600px;
       background: white;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border: 5px dashed #ff69b4;
       text-align: center;
+      position: relative;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 20px;
+    .decor-top {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
     }
+
+    .decor-bottom {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+    }
+
+    h1 {
+      color: #ff69b4;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
   </style>
 </head>
 <body>
 
-  <!-- Sobre visible al inicio -->
-  <div id="envelope">📩 Haz clic para abrir la carta</div>
+  <div id="envelope">💌 Haz clic para abrir la carta 💌</div>
 
-  <!-- Carta oculta al inicio -->
   <div id="letter">
+    <div class="decor-top">🌸🌷💖🌺🌼</div>
+
     <h1>💖 Para mi querida mamá 💖</h1>
-
-    <!-- Imagen solo dentro de la carta -->
-    <img src="foto-mama.jpg" alt="Foto de mamá">
-
-    <p>Gracias mama por acompañarme desde niño en mis juegos por aguantar mi caracter por desvelarte cuando estaba enfermo y estar en los dias malos
+    <p>🌹 Gracias mama por acompañarme desde niño en mis juegos por aguantar mi caracter por desvelarte cuando estaba enfermo y estar en los dias malos
         y por hacer los dias buenos por hacer mis comidas favoritas en cada cumpleaños por ser la mas ordenada y prudente de la familia y al mismo tiempo
         la que resuelve cualquier problema y la encuentra cualquier cosa que se pierde en el hogar decir que solo eres mi mama se queda corto por un millon de 
-        dia mas junto a ti, TE AMO MAMA .</p>
+        dia mas junto a ti, TE AMO MAMA 🌹  .</p>
     <p style="font-style: italic;">Con amor, [TU NIÑO]</p>
-    </div>
+  </div>
+
+    <div class="decor-bottom">💞💖💐💖💞</div>
+  </div>
 
   <script>
     const envelope = document.getElementById('envelope');
@@ -78,4 +101,3 @@
 
 </body>
 </html>
-
