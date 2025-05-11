@@ -39,22 +39,32 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       text-align: center;
     }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Sobre visible al inicio -->
   <div id="envelope">📩 Haz clic para abrir la carta</div>
-   <!-- Imagen local, asegúrate que mama.jpg está en la misma carpeta -->
-    <img src="foto-mama.jpg" alt="Foto de mamá">
 
+  <!-- Carta oculta al inicio -->
   <div id="letter">
     <h1>💖 Para mi querida mamá 💖</h1>
+
+    <!-- Imagen solo dentro de la carta -->
+    <img src="foto-mama.jpg" alt="Foto de mamá">
+
     <p>Gracias mama por acompañarme desde niño en mis juegos por aguantar mi caracter por desvelarte cuando estaba enfermo y estar en los dias malos
         y por hacer los dias buenos por hacer mis comidas favoritas en cada cumpleaños por ser la mas ordenada y prudente de la familia y al mismo tiempo
         la que resuelve cualquier problema y la encuentra cualquier cosa que se pierde en el hogar decir que solo eres mi mama se queda corto por un millon de 
         dia mas junto a ti, TE AMO MAMA .</p>
     <p style="font-style: italic;">Con amor, [TU NIÑO]</p>
-  </div>
+    </div>
 
   <script>
     const envelope = document.getElementById('envelope');
@@ -68,3 +78,4 @@
 
 </body>
 </html>
+
