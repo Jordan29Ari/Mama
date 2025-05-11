@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta para Mamá</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #fdebd0;
+      font-family: Arial, sans-serif;
+    }
+
+    #envelope {
+      width: 300px;
+      height: 200px;
+      background: orange;
+      border: 5px solid #b34700;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    #letter {
+      display: none;
+      max-width: 600px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="envelope">📩 Haz clic para abrir la carta</div>
+
+  <div id="letter">
+    <h1>💖 Para mi querida mamá 💖</h1>
+    <p>Querida mamá, te amo con todo mi corazón. Gracias por estar siempre ahí para mí.</p>
+    <p style="font-style: italic;">Con amor, [Tu Nombre]</p>
+  </div>
+
+  <script>
+    const envelope = document.getElementById('envelope');
+    const letter = document.getElementById('letter');
+
+    envelope.addEventListener('click', function() {
+      envelope.style.display = 'none';
+      letter.style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
